@@ -38,7 +38,7 @@ wildfires_test <- testing(wildfires_split)
 # folds
 set.seed(PICK A VALUE)
 wildfires_folds <-
-  wildfires_train
+  wildfires_train |>
   vfold_cv(v = 5, repeats = 3, strata = burned)
 
 # objects required for tuning

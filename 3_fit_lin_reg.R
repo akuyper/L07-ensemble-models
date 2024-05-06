@@ -10,13 +10,13 @@ library(here)
 tidymodels_prefer()
 
 # load required objects ----
-load("recipes/wildfires_recipe.rda")
-load("data/wildfires_folds.rda")
+load(here("recipes/wildfires_recipe.rda"))
+load(here("data/wildfires_folds.rda"))
 
 # model specification ----
 lin_reg_spec <-
   linear_reg() |>
-  set_mode("regression")
+  set_mode("regression") |>
   set_engine("lm")
 
 # workflow ----
@@ -26,7 +26,8 @@ lin_reg_wflow <-
   add_recipe(wildfires_recipe)
 
 # Tuning/fitting ----
-lin_reg_res <- lin_reg_wflow |>
+lin_reg_res <-
+    lin_reg_wflow |>
   fit_resamples(
     resamples = wildfires_folds,
     # NEED TO ADD AN ARGUMENT HERE

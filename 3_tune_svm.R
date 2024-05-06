@@ -41,7 +41,8 @@ svm_wflow <-
   add_recipe(wildfires_recipe)
 
 # Tuning/fitting ----
-svm_res <- svm_wflow |>
+svm_res <-
+  svm_wflow |>
   tune_grid(
     resamples = wildfires_folds,
     grid = svm_grid,

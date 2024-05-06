@@ -13,15 +13,15 @@ tidymodels_prefer()
 
 
 # load required objects ----
-load(here("recipes/wildfires_recipe.rda") )
-load(here("data/wildfires_folds.rda") )
+load(here("recipes/wildfires_recipe.rda"))
+load(here("data/wildfires_folds.rda"))
 
 # model specification ----
 knn_spec <-
   nearest_neighbor(
     neighbors = tune()
   ) |>
-  set_mode("regression")
+  set_mode("regression") |>
   set_engine("kknn")
 
 # # check tuning parameters
