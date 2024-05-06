@@ -43,8 +43,8 @@ wildfires_folds <-
 
 # objects required for tuning
 # data objects
-save(wildfires_folds, file = here("L07-ensemble-models/data/wildfires_folds.rda"))
-save(wildfires_split, file = here("L07-ensemble-models/data/wildfires_split.rda"))
-save(wildfires_train, file = here("L07-ensemble-models/data/wildfires_train.rda"))
-save(wildfires_test, file = here("L07-ensemble-models/data/wildfires_test.rda"))
+save(wildfires_folds, file = here("data/wildfires_folds.rda"))
+save(wildfires_split, file = here("data/wildfires_split.rda"))
+save(wildfires_train, file = here("data/wildfires_train.rda"))
+save(wildfires_test, file = here("data/wildfires_test.rda"))
 

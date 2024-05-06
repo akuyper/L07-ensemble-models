@@ -13,8 +13,8 @@ tidymodels_prefer()
 
 
 # load required objects ----
-load("L07-ensemble-models/recipes/wildfires_recipe.rda")
-load("L07-ensemble-models/data/wildfires_folds.rda")
+load("recipes/wildfires_recipe.rda")
+load("data/wildfires_folds.rda")
 
 # model specification ----
 svm_spec <-
