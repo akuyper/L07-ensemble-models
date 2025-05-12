@@ -7,6 +7,7 @@ date: today
 
 format:
   html:
+    theme: cosmo
     toc: true
     toc-depth: 4
     toc-location: left
@@ -16,11 +17,12 @@ format:
 
 execute:
   warning: false
-  
+
 from: markdown+emoji
 reference-location: margin
-citation-location: margin
+citation-location: margin 
 ---
+
 
 ::: {.callout-tip icon=false}
 
@@ -31,9 +33,10 @@ To link to your github **repo**sitory, appropriately edit the example link below
 [https://your-github-repo-url](https://your-github-repo-url)
 
 :::
+
 ## What should be turned in
 
 A short report/executive summary/memo outlining the results with a link at the top to the associated GitHub repo. 
 
-The short report should include a brief description/exploration of the ensemble model. How many total models were considered? How many were ultimately included in the ensemble model and their weights? Assess the performance of the ensemble model on the test set. Compare the ensemble models performance to its member models. Graphs and tables (expected to be nicely formatted) will be useful for this. 
+The short report should include a brief description/exploration of the ensemble model. How many total models were considered? How many were ultimately included in the ensemble model and their weights? Assess the performance of the ensemble model on the test set. Compare the ensemble models performance to its member models. Graphs and tables will be useful for this. Document is expected to be nicely formatted and well organized.
 
